@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>우리 집 야옹이</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="wrap">
         <h1>고양이 사진 투고 형식</h1>    
         <p>필요 사항을 기입한 후 투고 버튼을 눌러주세요.</p>
         <form action="#" id="entryForm" method="POST">
-            <table border="1">
+            <table class="entryTable" border="1">
             <tr>
                 <th>고양이 이름:</th>
                 <td><input type="text" name="cat-name"> </td>
@@ -65,9 +66,9 @@
                 <td><textarea name="comment" cols="40" rows="4"></textarea></td>
             </tr>
             </table>
-            <div>
-                <input type="reset" value="취소">
-                <input type="submit" value="투고">
+            <div class="btns">
+                <input class="btn btn-clear" type="reset" value="취소">
+                <input class="btn btn-send" type="submit" value="투고">
             </div>
         </form>
     </div>
